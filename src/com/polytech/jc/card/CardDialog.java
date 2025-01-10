@@ -70,6 +70,7 @@ public class CardDialog {
         }
 
         byte result = r.getData()[0];
+        System.out.println("Read " + result + " packets");
         byte[][] packets_result = new byte[result][];
         short len = 0;
         for(int i=0;i<packets_result.length;i++){
